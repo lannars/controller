@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelTheWorld - Viagens ao Redor do Mundo</title>
+  <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+    }
+
+    /* Cabeçalho */
+    header {
+        background-image: url('https://via.placeholder.com/1500x600?text=Travel+the+World');
+        background-size: cover;
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+        background-position: center;
+    }
+
+    header h1 {
+        font-size: 3.5em;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 1.5em;
+    }
+
+    /* Menu de Navegação */
+    nav {
+        background-color: #4CAF50;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    nav a {
+        float: left;
+        display: block;
+        color: white;
+        padding: 16px 20px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.1em;
+    }
+
+    nav a:hover {
+        background-color: #45a049;
+    }
+
+    /* Conteúdo Principal */
+    .content {
+        padding: 30px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section-title {
+        font-size: 2.5em;
+        color: #4CAF50;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    /* Cards de Destinos */
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .card {
+        width: 280px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .card-content h3 {
+        font-size: 1.8em;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .card-content p {
+        font-size: 1.1em;
+        color: #777;
+        margin-bottom: 15px;
+    }
+
+    .card-content .button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    .card-content .button:hover {
+        background-color: #45a049;
+    }
+
+    /* Rodapé */
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        position: relative;
+        width: 100%;
+        bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Cabeçalho -->
+<header>
+  <h1>TravelTheWorld</h1>
+  <p>Descubra destinos incríveis ao redor do mundo! 🌍✈️</p>
+</header>
+
+<!-- Menu de Navegação -->
+<nav>
+  <a href="http://localhost:8090/escola/home">Início</a>
+  <a href="http://localhost:8090/escola/contato">Contato</a>
+  <a href="http://localhost:8090/escola/sobre">Sobre</a>
+  <a href="http://localhost:8090/escola/servicos">Serviçps</a>
+</nav>
+<!-- Conteúdo Principal -->
+<div class="content" id="destinos">
+  <h2 class="section-title">Destinos Imperdíveis</h2>
+
+  <div class="card-container">
+    <div class="card">
+      <img src="https://via.placeholder.com/280x200?text=Fernando+de+Noronha" alt="Fernando de Noronha">
+      <div class="card-content">
+        <h3>Fernando de Noronha</h3>
+        <p>Um paraíso tropical no Brasil com praias de águas cristalinas e rica biodiversidade.</p>
+        <a href="#" class="button">Saiba mais</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/280x200?text=Orlando" alt="Orlando">
+      <div class="card-content">
+        <h3>Orlando</h3>
+        <p>Destinos perfeitos para famílias, com parques temáticos e atrações emocionantes.</p>
+        <a href="#" class="button">Saiba mais</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/280x200?text=Japão" alt="Japão">
+      <div class="card-content">
+        <h3>Japão</h3>
+        <p>Exploração da cultura milenar, templos antigos e tecnologia de ponta.</p>
+        <a href="#" class="button">Saiba mais</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/280x200?text=França" alt="França">
+      <div class="card-content">
+        <h3>França</h3>
+        <p>A terra do romance, gastronomia requintada e uma das culturas mais influentes do mundo.</p>
+        <a href="#" class="button">Saiba mais</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Rodapé -->
+<footer>
+  <p>&copy; 2024 TravelTheWorld - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
